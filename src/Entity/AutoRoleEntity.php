@@ -81,8 +81,7 @@ class AutoRoleEntity extends ConfigEntityBase implements AutoRoleEntityInterface
   /**
    * @return string
    */
-  public function getRole()
-  {
+  public function getRole() {
     return $this->role;
   }
 
@@ -90,8 +89,7 @@ class AutoRoleEntity extends ConfigEntityBase implements AutoRoleEntityInterface
    * @param string $role
    * @return AutoRoleEntity
    */
-  public function setRole($role)
-  {
+  public function setRole($role) {
     $this->role = $role;
     return $this;
   }
@@ -99,8 +97,7 @@ class AutoRoleEntity extends ConfigEntityBase implements AutoRoleEntityInterface
   /**
    * @return string
    */
-  public function getField()
-  {
+  public function getField() {
     return $this->field;
   }
 
@@ -108,8 +105,7 @@ class AutoRoleEntity extends ConfigEntityBase implements AutoRoleEntityInterface
    * @param string $field
    * @return AutoRoleEntity
    */
-  public function setField($field)
-  {
+  public function setField($field) {
     $this->field = $field;
     return $this;
   }
@@ -117,8 +113,7 @@ class AutoRoleEntity extends ConfigEntityBase implements AutoRoleEntityInterface
   /**
    * @return string
    */
-  public function getFieldValue()
-  {
+  public function getFieldValue() {
     return $this->field_value;
   }
 
@@ -126,11 +121,9 @@ class AutoRoleEntity extends ConfigEntityBase implements AutoRoleEntityInterface
    * @param string $field_value
    * @return AutoRoleEntity
    */
-  public function setFieldValue($field_value)
-  {
+  public function setFieldValue($field_value) {
     $this->field_value = $field_value;
     return $this;
   }
-
 
 }
