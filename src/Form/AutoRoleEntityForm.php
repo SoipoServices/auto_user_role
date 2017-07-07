@@ -53,7 +53,7 @@ class AutoRoleEntityForm extends EntityForm {
    */
   public static function create(ContainerInterface $container) {
     return new static(
-        $container->get('entity.manager')->getStorage('user_role'),
+        $container->get('entity_type.manager')->getStorage('user_role'),
         $container->get('entity_field.manager')
     );
   }
