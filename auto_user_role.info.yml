@@ -6,4 +6,3 @@ package: SoipoServices
 dependencies:
   - field
   - node
-  - entity

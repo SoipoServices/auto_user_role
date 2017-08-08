@@ -39,7 +39,9 @@ function auto_user_role_theme() {
  */
 function auto_user_role_user_presave(\Drupal\user\UserInterface $user) {
 
-  if($user->isNew()) {
+  $currentUser = Drupal::currentUser();
+
+  if($user->isNew() || count($currentUser->getRoles()) == 1) {
     $query = \Drupal::entityQuery('auto_role_entity');
     $entities = $query->execute();
     $autoRolesConfig = \Drupal\auto_user_role\Entity\AutoRoleEntity::loadMultiple($entities);
